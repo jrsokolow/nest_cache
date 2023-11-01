@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { CacheModule } from '@nestjs/cache-manager';
 
 @Module({
-  imports: [CacheModule.register({ttl:30000})],
+  imports: [CacheModule.register({ttl:10000})],
   controllers: [AppController],
   providers: [AppService],
 })

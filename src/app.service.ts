@@ -19,4 +19,8 @@ export class AppService {
       return 'Cache is empty';
     }
   }
+
+  async getCacheState(): Promise<string []> {
+    return await this.cacheManager.store.keys();
+  }
 }
